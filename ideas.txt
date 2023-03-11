@@ -1,0 +1,24 @@
+Break down into vertices (moderately difficult)
+
+For each vertice pair, try each stroke for best fit, use one that doesn't go outside the original image lines (for tie?).
+
+Continue for all (avoid doing the reverses for pairs)
+
+Weaknesses:
+We are going to do alot of extra lines
+
+
+
+
+
+
+take each border point, find closes border point which touches other side, mark midpoint. (extremely expensive)
+
+Using stroke data find nearest matching stroke type (error of nearest point on both lines) (expensive, cheaper way?)
+
+Stroke types can have bound box
+https://en.wikipedia.org/wiki/Stroke_(CJK_character) (36 types)
+
+Replace each messy stroke with the matching stroke.
+
+Fit each stroke into place (manual, or automatic)

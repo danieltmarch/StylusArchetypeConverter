@@ -1,0 +1,294 @@
+<?xml version='1.0' standalone='no'?>
+<hanDefinition uuid='DBBA843C-4C38-4047-AD02-FB6686080417' unicode='7D42' creationDate='2008-09-18T18:43:02.470959' creationTool='inscribe.py 1.0' xmlns='http://biologicinstitute.org/schemas/stylus/1.0'>
+<bounds top='500.0' left='30.0' bottom='40.0' right='500.0' width='470.0' height='460.0' x-midpoint='265.0' y-midpoint='270.0' />
+<length>2381.2559348696905</length>
+<minimumStrokeLength>95.22189563174031</minimumStrokeLength>
+<groups>
+<group>
+<bounds top='500.0' left='30.0' bottom='40.0' right='200.0' width='170.0' height='460.0' x-midpoint='115.0' y-midpoint='270.0' />
+<length>1121.5741907121492</length>
+<weightedCenter x='116.22506506311964' y='264.57975030987774' />
+<containedStrokes>1 2 3 4 5 6</containedStrokes>
+</group>
+
+
+<group>
+<bounds top='500.0' left='220.0' bottom='40.0' right='500.0' width='280.0' height='460.0' x-midpoint='360.0' y-midpoint='270.0' />
+<length>1259.6817441575413</length>
+<weightedCenter x='345.28256787567534' y='290.41564472721194' />
+<containedStrokes>7 8 9 10 11</containedStrokes>
+</group>
+</groups>
+<strokes>
+<stroke>
+<bounds top='500.0' left='50.0' bottom='330.0' right='130.0' width='80.0' height='170.0' x-midpoint='90.0' y-midpoint='415.0' />
+<length>234.72555569640937</length>
+<points>
+<forward><pointDistance x='130.0' y='500.0' fractionalDistance='0.0' />
+<pointDistance x='119.34375' y='472.75' fractionalDistance='0.12465407485101186' />
+<pointDistance x='108.875' y='449.0' fractionalDistance='0.23522962545604545' />
+<pointDistance x='98.59375' y='428.75' fractionalDistance='0.33198302471035251' />
+<pointDistance x='88.5' y='412.0' fractionalDistance='0.41529834145302985' />
+<pointDistance x='78.59375' y='398.75' fractionalDistance='0.48577966948829215' />
+<pointDistance x='68.875' y='389.0' fractionalDistance='0.54442902635013823' />
+<pointDistance x='50.0' y='380.0' fractionalDistance='0.63351560755622405' />
+<pointDistance x='120.0' y='330.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='120.0' y='330.0' fractionalDistance='0.0' />
+<pointDistance x='50.0' y='380.0' fractionalDistance='0.36648439244377595' />
+<pointDistance x='68.875' y='389.0' fractionalDistance='0.45557097364986177' />
+<pointDistance x='78.59375' y='398.75' fractionalDistance='0.5142203305117079' />
+<pointDistance x='88.5' y='412.0' fractionalDistance='0.5847016585469702' />
+<pointDistance x='98.59375' y='428.75' fractionalDistance='0.66801697528964743' />
+<pointDistance x='108.875' y='449.0' fractionalDistance='0.76477037454395458' />
+<pointDistance x='119.34375' y='472.75' fractionalDistance='0.87534592514898812' />
+<pointDistance x='130.0' y='500.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='420.0' left='40.0' bottom='230.0' right='190.0' width='150.0' height='190.0' x-midpoint='115.0' y-midpoint='325.0' />
+<length>384.0763246210696</length>
+<points>
+<forward><pointDistance x='170.0' y='420.0' fractionalDistance='0.0' />
+<pointDistance x='151.34375' y='379.84375' fractionalDistance='0.11528551809594968' />
+<pointDistance x='133.375' y='344.375' fractionalDistance='0.21880826553772781' />
+<pointDistance x='116.09375' y='313.59375' fractionalDistance='0.310718443667857' />
+<pointDistance x='99.5' y='287.5' fractionalDistance='0.39123127184265921' />
+<pointDistance x='83.59375' y='266.09375' fractionalDistance='0.46066802873894308' />
+<pointDistance x='68.375' y='249.375' fractionalDistance='0.51953163350977993' />
+<pointDistance x='53.84375' y='237.34375' fractionalDistance='0.56865085353347533' />
+<pointDistance x='40.0' y='230.0' fractionalDistance='0.60945262599044525' />
+<pointDistance x='190.0' y='230.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='190.0' y='230.0' fractionalDistance='0.0' />
+<pointDistance x='40.0' y='230.0' fractionalDistance='0.39054737400955475' />
+<pointDistance x='53.84375' y='237.34375' fractionalDistance='0.43134914646652467' />
+<pointDistance x='68.375' y='249.375' fractionalDistance='0.48046836649022007' />
+<pointDistance x='83.59375' y='266.09375' fractionalDistance='0.53933197126105692' />
+<pointDistance x='99.5' y='287.5' fractionalDistance='0.60876872815734084' />
+<pointDistance x='116.09375' y='313.59375' fractionalDistance='0.68928155633214305' />
+<pointDistance x='133.375' y='344.375' fractionalDistance='0.78119173446227219' />
+<pointDistance x='151.34375' y='379.84375' fractionalDistance='0.88471448190405033' />
+<pointDistance x='170.0' y='420.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='290.0' left='170.0' bottom='200.0' right='200.0' width='30.0' height='90.0' x-midpoint='185.0' y-midpoint='245.0' />
+<length>95.22189563174031</length>
+<points>
+<forward><pointDistance x='170.0' y='290.0' fractionalDistance='0.0' />
+<pointDistance x='179.375' y='270.5' fractionalDistance='0.227222504462675' />
+<pointDistance x='187.5' y='249.0' fractionalDistance='0.46859587378159701' />
+<pointDistance x='194.375' y='225.5' fractionalDistance='0.72573219737420702' />
+<pointDistance x='197.34375' y='213.0' fractionalDistance='0.86065603057121498' />
+<pointDistance x='200.0' y='200.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='200.0' y='200.0' fractionalDistance='0.0' />
+<pointDistance x='197.34375' y='213.0' fractionalDistance='0.13934396942878502' />
+<pointDistance x='194.375' y='225.5' fractionalDistance='0.27426780262579298' />
+<pointDistance x='187.5' y='249.0' fractionalDistance='0.53140412621840305' />
+<pointDistance x='179.375' y='270.5' fractionalDistance='0.772777495537325' />
+<pointDistance x='170.0' y='290.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='230.0' left='120.0' bottom='40.0' right='120.0' width='0.0' height='190.0' x-midpoint='120.0' y-midpoint='135.0' />
+<length>190.0</length>
+<points>
+<forward><pointDistance x='120.0' y='230.0' fractionalDistance='0.0' />
+<pointDistance x='120.0' y='40.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='120.0' y='40.0' fractionalDistance='0.0' />
+<pointDistance x='120.0' y='230.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='170.0' left='30.0' bottom='60.0' right='60.0' width='30.0' height='110.0' x-midpoint='45.0' y-midpoint='115.0' />
+<length>115.10119691236667</length>
+<points>
+<forward><pointDistance x='60.0' y='170.0' fractionalDistance='0.0' />
+<pointDistance x='59.3125' y='156.03125' fractionalDistance='0.1215074950278263' />
+<pointDistance x='57.75' y='142.125' fractionalDistance='0.2430853409428661' />
+<pointDistance x='55.3125' y='128.28125' fractionalDistance='0.36521005006801749' />
+<pointDistance x='52.0' y='114.5' fractionalDistance='0.48835178642341504' />
+<pointDistance x='47.8125' y='100.78125' fractionalDistance='0.61296920325789839' />
+<pointDistance x='42.75' y='87.125' fractionalDistance='0.73950490816577885' />
+<pointDistance x='36.8125' y='73.53125' fractionalDistance='0.86838174606431984' />
+<pointDistance x='30.0' y='60.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='30.0' y='60.0' fractionalDistance='0.0' />
+<pointDistance x='36.8125' y='73.53125' fractionalDistance='0.13161825393568016' />
+<pointDistance x='42.75' y='87.125' fractionalDistance='0.26049509183422115' />
+<pointDistance x='47.8125' y='100.78125' fractionalDistance='0.38703079674210161' />
+<pointDistance x='52.0' y='114.5' fractionalDistance='0.51164821357658496' />
+<pointDistance x='55.3125' y='128.28125' fractionalDistance='0.63478994993198246' />
+<pointDistance x='57.75' y='142.125' fractionalDistance='0.75691465905713384' />
+<pointDistance x='59.3125' y='156.03125' fractionalDistance='0.87849250497217368' />
+<pointDistance x='60.0' y='170.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='170.0' left='180.0' bottom='70.0' right='200.0' width='20.0' height='100.0' x-midpoint='190.0' y-midpoint='120.0' />
+<length>102.44921785056314</length>
+<points>
+<forward><pointDistance x='180.0' y='170.0' fractionalDistance='0.0' />
+<pointDistance x='187.625' y='148.375' fractionalDistance='0.22381742770600505' />
+<pointDistance x='193.5' y='124.5' fractionalDistance='0.46381161920081321' />
+<pointDistance x='195.78125' y='111.71875' fractionalDistance='0.5905401356540505' />
+<pointDistance x='197.625' y='98.375' fractionalDistance='0.72202504649672206' />
+<pointDistance x='199.03125' y='84.46875' fractionalDistance='0.85845528941667726' />
+<pointDistance x='200.0' y='70.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='200.0' y='70.0' fractionalDistance='0.0' />
+<pointDistance x='199.03125' y='84.46875' fractionalDistance='0.14154471058332274' />
+<pointDistance x='197.625' y='98.375' fractionalDistance='0.27797495350327794' />
+<pointDistance x='195.78125' y='111.71875' fractionalDistance='0.4094598643459495' />
+<pointDistance x='193.5' y='124.5' fractionalDistance='0.53618838079918674' />
+<pointDistance x='187.625' y='148.375' fractionalDistance='0.77618257229399501' />
+<pointDistance x='180.0' y='170.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='500.0' left='230.0' bottom='340.0' right='330.0' width='100.0' height='160.0' x-midpoint='280.0' y-midpoint='420.0' />
+<length>191.29614815986761</length>
+<points>
+<forward><pointDistance x='330.0' y='500.0' fractionalDistance='0.0' />
+<pointDistance x='321.875' y='475.625' fractionalDistance='0.1343127200208748' />
+<pointDistance x='312.5' y='452.5' fractionalDistance='0.2647548706450627' />
+<pointDistance x='301.875' y='430.625' fractionalDistance='0.39188155775747757' />
+<pointDistance x='290.0' y='410.0' fractionalDistance='0.51629227477795547' />
+<pointDistance x='276.875' y='390.625' fractionalDistance='0.63862645013209829' />
+<pointDistance x='262.5' y='372.5' fractionalDistance='0.75955645644262471' />
+<pointDistance x='246.875' y='355.625' fractionalDistance='0.87977822822131235' />
+<pointDistance x='230.0' y='340.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='230.0' y='340.0' fractionalDistance='0.0' />
+<pointDistance x='246.875' y='355.625' fractionalDistance='0.12022177177868765' />
+<pointDistance x='262.5' y='372.5' fractionalDistance='0.24044354355737529' />
+<pointDistance x='276.875' y='390.625' fractionalDistance='0.36137354986790171' />
+<pointDistance x='290.0' y='410.0' fractionalDistance='0.48370772522204453' />
+<pointDistance x='301.875' y='430.625' fractionalDistance='0.60811844224252243' />
+<pointDistance x='312.5' y='452.5' fractionalDistance='0.73524512935493735' />
+<pointDistance x='321.875' y='475.625' fractionalDistance='0.8656872799791252' />
+<pointDistance x='330.0' y='500.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='450.0' left='220.0' bottom='210.0' right='440.0' width='220.0' height='240.0' x-midpoint='330.0' y-midpoint='330.0' />
+<length>463.42234934002846</length>
+<points>
+<forward><pointDistance x='310.0' y='450.0' fractionalDistance='0.0' />
+<pointDistance x='440.0' y='450.0' fractionalDistance='0.28052164550358072' />
+<pointDistance x='426.28125' y='414.75' fractionalDistance='0.36214368124874335' />
+<pointDistance x='408.625' y='381.0' fractionalDistance='0.44433532134097664' />
+<pointDistance x='387.03125' y='348.75' fractionalDistance='0.5280856147779952' />
+<pointDistance x='361.5' y='318.0' fractionalDistance='0.61433000339772559' />
+<pointDistance x='332.03125' y='288.75' fractionalDistance='0.70392584288742721' />
+<pointDistance x='298.625' y='261.0' fractionalDistance='0.79763854910812348' />
+<pointDistance x='261.28125' y='234.75' fractionalDistance='0.8961376106692247' />
+<pointDistance x='220.0' y='210.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='220.0' y='210.0' fractionalDistance='0.0' />
+<pointDistance x='261.28125' y='234.75' fractionalDistance='0.1038623893307753' />
+<pointDistance x='298.625' y='261.0' fractionalDistance='0.20236145089187652' />
+<pointDistance x='332.03125' y='288.75' fractionalDistance='0.29607415711257279' />
+<pointDistance x='361.5' y='318.0' fractionalDistance='0.38566999660227441' />
+<pointDistance x='387.03125' y='348.75' fractionalDistance='0.4719143852220048' />
+<pointDistance x='408.625' y='381.0' fractionalDistance='0.55566467865902336' />
+<pointDistance x='426.28125' y='414.75' fractionalDistance='0.6378563187512567' />
+<pointDistance x='440.0' y='450.0' fractionalDistance='0.71947835449641928' />
+<pointDistance x='310.0' y='450.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='410.0' left='290.0' bottom='210.0' right='500.0' width='210.0' height='200.0' x-midpoint='395.0' y-midpoint='310.0' />
+<length>297.70045085093909</length>
+<points>
+<forward><pointDistance x='290.0' y='410.0' fractionalDistance='0.0' />
+<pointDistance x='311.21875' y='372.09375' fractionalDistance='0.14592179638389127' />
+<pointDistance x='333.875' y='337.875' fractionalDistance='0.28377631806209741' />
+<pointDistance x='357.96875' y='307.34375' fractionalDistance='0.41442108925151638' />
+<pointDistance x='383.5' y='280.5' fractionalDistance='0.53886277011419115' />
+<pointDistance x='410.46875' y='257.34375' fractionalDistance='0.65826501564375983' />
+<pointDistance x='438.875' y='237.875' fractionalDistance='0.77394366165875494' />
+<pointDistance x='468.71875' y='222.09375' fractionalDistance='0.8873442377375611' />
+<pointDistance x='500.0' y='210.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='500.0' y='210.0' fractionalDistance='0.0' />
+<pointDistance x='468.71875' y='222.09375' fractionalDistance='0.1126557622624389' />
+<pointDistance x='438.875' y='237.875' fractionalDistance='0.22605633834124506' />
+<pointDistance x='410.46875' y='257.34375' fractionalDistance='0.34173498435624017' />
+<pointDistance x='383.5' y='280.5' fractionalDistance='0.46113722988580885' />
+<pointDistance x='357.96875' y='307.34375' fractionalDistance='0.58557891074848367' />
+<pointDistance x='333.875' y='337.875' fractionalDistance='0.71622368193790265' />
+<pointDistance x='311.21875' y='372.09375' fractionalDistance='0.85407820361610876' />
+<pointDistance x='290.0' y='410.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='220.0' left='320.0' bottom='150.0' right='430.0' width='110.0' height='70.0' x-midpoint='375.0' y-midpoint='185.0' />
+<length>132.80775773539671</length>
+<points>
+<forward><pointDistance x='320.0' y='220.0' fractionalDistance='0.0' />
+<pointDistance x='337.25' y='214.75' fractionalDistance='0.1357693498310692' />
+<pointDistance x='353.5' y='208.5' fractionalDistance='0.26686474398092314' />
+<pointDistance x='368.75' y='201.25' fractionalDistance='0.3940082563682859' />
+<pointDistance x='383.0' y='193.0' fractionalDistance='0.51799102726094237' />
+<pointDistance x='396.25' y='183.75' fractionalDistance='0.63966586679394521' />
+<pointDistance x='408.5' y='173.5' fractionalDistance='0.75993469082444209' />
+<pointDistance x='419.75' y='162.25' fractionalDistance='0.87973117596950312' />
+<pointDistance x='430.0' y='150.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='430.0' y='150.0' fractionalDistance='0.0' />
+<pointDistance x='419.75' y='162.25' fractionalDistance='0.12026882403049688' />
+<pointDistance x='408.5' y='173.5' fractionalDistance='0.24006530917555791' />
+<pointDistance x='396.25' y='183.75' fractionalDistance='0.36033413320605479' />
+<pointDistance x='383.0' y='193.0' fractionalDistance='0.48200897273905763' />
+<pointDistance x='368.75' y='201.25' fractionalDistance='0.60599174363171415' />
+<pointDistance x='353.5' y='208.5' fractionalDistance='0.73313525601907692' />
+<pointDistance x='337.25' y='214.75' fractionalDistance='0.86423065016893075' />
+<pointDistance x='320.0' y='220.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+
+
+<stroke>
+<bounds top='140.0' left='280.0' bottom='40.0' right='420.0' width='140.0' height='100.0' x-midpoint='350.0' y-midpoint='90.0' />
+<length>174.45503807130945</length>
+<points>
+<forward><pointDistance x='280.0' y='140.0' fractionalDistance='0.0' />
+<pointDistance x='302.09375' y='131.0' fractionalDistance='0.1367488457043467' />
+<pointDistance x='322.875' y='121.0' fractionalDistance='0.26894392577659532' />
+<pointDistance x='342.34375' y='110.0' fractionalDistance='0.39712251332813903' />
+<pointDistance x='360.5' y='98.0' fractionalDistance='0.52187378641051207' />
+<pointDistance x='377.34375' y='85.0' fractionalDistance='0.64383660321219316' />
+<pointDistance x='392.875' y='71.0' fractionalDistance='0.76369441875332311' />
+<pointDistance x='407.09375' y='56.0' fractionalDistance='0.88216712416662146' />
+<pointDistance x='420.0' y='40.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='420.0' y='40.0' fractionalDistance='0.0' />
+<pointDistance x='407.09375' y='56.0' fractionalDistance='0.11783287583337854' />
+<pointDistance x='392.875' y='71.0' fractionalDistance='0.23630558124667689' />
+<pointDistance x='377.34375' y='85.0' fractionalDistance='0.35616339678780684' />
+<pointDistance x='360.5' y='98.0' fractionalDistance='0.47812621358948793' />
+<pointDistance x='342.34375' y='110.0' fractionalDistance='0.60287748667186092' />
+<pointDistance x='322.875' y='121.0' fractionalDistance='0.73105607422340468' />
+<pointDistance x='302.09375' y='131.0' fractionalDistance='0.86325115429565336' />
+<pointDistance x='280.0' y='140.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+</strokes>
+<overlaps><overlap firstStroke='8' secondStroke='9' required='true' />
+<overlap firstStroke='1' secondStroke='2' required='false' />
+<overlap firstStroke='2' secondStroke='3' required='false' />
+<overlap firstStroke='2' secondStroke='4' required='false' />
+<overlap firstStroke='7' secondStroke='8' required='false' />
+<overlap firstStroke='7' secondStroke='9' required='false' /></overlaps>
+</hanDefinition>

@@ -1,0 +1,27 @@
+<?xml version='1.0' standalone='no'?>
+<hanDefinition uuid='791D0736-B512-47C8-A103-40FEB6334F37' unicode='4E00' creationDate='2008-09-16T17:03:35.512367' creationTool='inscribe.py 1.0' xmlns='http://biologicinstitute.org/schemas/stylus/1.0'>
+<bounds top='270.0' left='70.0' bottom='270.0' right='470.0' width='400.0' height='0.0' x-midpoint='270.0' y-midpoint='270.0' />
+<length>400.0</length>
+<minimumStrokeLength>400.0</minimumStrokeLength>
+<groups>
+<group>
+<bounds top='270.0' left='70.0' bottom='270.0' right='470.0' width='400.0' height='0.0' x-midpoint='270.0' y-midpoint='270.0' />
+<length>400.0</length>
+<weightedCenter x='270.0' y='270.0' />
+<containedStrokes>1</containedStrokes>
+</group>
+</groups>
+<strokes>
+<stroke>
+<bounds top='270.0' left='70.0' bottom='270.0' right='470.0' width='400.0' height='0.0' x-midpoint='270.0' y-midpoint='270.0' />
+<length>400.0</length>
+<points>
+<forward><pointDistance x='70.0' y='270.0' fractionalDistance='0.0' />
+<pointDistance x='470.0' y='270.0' fractionalDistance='1.0' /></forward>
+<reverse><pointDistance x='470.0' y='270.0' fractionalDistance='0.0' />
+<pointDistance x='70.0' y='270.0' fractionalDistance='1.0' /></reverse>
+</points>
+</stroke>
+</strokes>
+
+</hanDefinition>
