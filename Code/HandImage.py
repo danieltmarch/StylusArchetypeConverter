@@ -7,7 +7,7 @@ import xml.etree.ElementTree as ET
 
 #char data structure
 def getHanziChar(character):
-    fileName = '../Hanzi Data/' + character + '.json'
+    fileName = '../Data/Hanzi Data/' + character + '.json'
     with open(fileName, 'r') as f:
         charData = json.load(f)
     return charData
