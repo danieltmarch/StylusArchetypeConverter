@@ -34,5 +34,5 @@ def renderChar(char, path='../Fonts/msyh.ttc', fontsize=1000, show=False):
     paddedImg[ hPad:hPad+height , wPad:wPad+width ] = arr
     
     if(show):
-        plt.imshow(paddedImg, origin='lower')    
+        plt.imshow(paddedImg, origin='lower', cmap='gray', vmin=0, vmax=20)
     return paddedImg

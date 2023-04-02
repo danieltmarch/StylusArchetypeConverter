@@ -2,7 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import bezier
 import re #regex
-import pickle
+import pickle #for saving objects
+import os #for searching for files in a directory
 
 def plotStroke(stroke):
     fig, ax = plt.subplots(figsize=(8,8))
@@ -37,3 +38,18 @@ def saveStroke(stroke):
     fileName = getFileNameFromStroke(stroke)
     with open(f"../Data/Strokes/{fileName}.pickle", 'wb') as file:
         pickle.dump(stroke, file)
+        
+def loadAllStrokes():
+    allStrokes = []
+    for fileName in os.listdir("../Data/Strokes"):
+        if(".pickle" in fileName): #otherwise skip file
+            allStrokes.append(loadStroke(fileName, extension=""))
+    return allStrokes
+
+def loadStrokeDict(): #load strokes as a dictionary, name is the key, value is the stroke type
+    strokeDict = {}
+    for fileName in os.listdir("../Data/Strokes"):
+        if(".pickle" in fileName): #otherwise skip file
+            stroke = loadStroke(fileName, extension="")
+            strokeDict[stroke.name] = stroke
+    return strokeDict
