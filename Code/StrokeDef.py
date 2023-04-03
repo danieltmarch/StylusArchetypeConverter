@@ -26,14 +26,18 @@ def plotStroke(stroke):
 class StrokeType:
     def set(self, name, symbol, arialDef, hanziDef): #name should be suitable to be a file name, e.g. no slashes or question marks
         self.name = name
+        self.symbol = symbol
         self.arial = arialDef
         self.hanzi = hanziDef
 
 def getFileNameFromStroke(stroke):
     return re.sub("[^a-zA-Z\d\s]", "", stroke.name) #allow only characters, digits, and spaces
 def loadStroke(fileName, extension=".pickle"):
-    with open(f"../Data/Strokes/{fileName}{extension}", 'rb') as file:
-        return pickle.load(file)
+    try:
+        with open(f"../Data/Strokes/{fileName}{extension}", 'rb') as file:
+            return pickle.load(file)
+    except IOError:
+        return None
 def saveStroke(stroke):
     fileName = getFileNameFromStroke(stroke)
     with open(f"../Data/Strokes/{fileName}.pickle", 'wb') as file:

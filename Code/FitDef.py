@@ -17,8 +17,11 @@ class FitData:
         
 #function to save/load a particular fit
 def loadFits(character):
-    with open(f"../Data/Fits/{character}.pickle", 'rb') as file:
-        return pickle.load(file) #FitData
+    try:
+        with open(f"../Data/Fits/{character}.pickle", 'rb') as file:
+            return pickle.load(file) #FitData
+    except IOError:
+        return None
 def saveFits(fitData):
     with open(f"../Data/Fits/{fitData.character}.pickle", 'wb') as file:
         pickle.dump(fitData, file)

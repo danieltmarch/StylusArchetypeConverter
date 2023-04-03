@@ -11,18 +11,10 @@ class Fit:
         self.name = name
         self.x = np.array(xRange)
         self.y = np.array(yRange)
+        self.group = 1
         
     def __str__(self):
         return (f"Stroke type {self.name}. x bounds: {self.x}, y bounds: {self.y}.")
-    
-
-#function to save/load a particular fit
-def loadFits(character):
-    with open(f"../Data/Fits/{character}.pickle", 'rb') as file:
-        return pickle.load(file)
-def saveFit(character, fits):
-    with open(f"../Data/Fits/{character}.pickle", 'wb') as file:
-        pickle.dump(fits, file)
     
 #fit each stroke using the strokeDef dictionary {Key: name, Value: StrokeDef}
 def getFits(strokes, strokeDefs, resol=50):
@@ -149,14 +141,16 @@ def getNearestDist(point, linePoints):
 
 #mapping function to map from hanzi coords to arial coords
 
-def mapCoord(coord, handDim, arialDim): #e.g. x coord 400, when original width is 800, and new width is 1000, maps to 500
-    return arialDim*(coord/handDim)
+def mapCoord(coord, handDim, arialDim, pad): #e.g. x coord 400, when original width is 800, and new width is 1000, maps to 500, pad is a percent of the arialDim
+    pad = pad/2
+    return arialDim*pad + (arialDim*(1-pad))*(coord/handDim)
 #fits is a list, handDims and arialDims are a list like: [width, height]
-def mapFits(fits, handDims, arialDims):
-    arialFits = fits.copy()
-    for i in range(len(arialFits)): #map the bounding box coords
-        arialFits[i].x[0] = round(mapCoord(arialFits[i].x[0], handDims[0], arialDims[0])) #bounds need to be integers, so round
-        arialFits[i].x[1] = round(mapCoord(arialFits[i].x[1], handDims[0], arialDims[0]))
-        arialFits[i].y[0] = round(mapCoord(arialFits[i].y[0], handDims[1], arialDims[1]))
-        arialFits[i].y[1] = round(mapCoord(arialFits[i].y[1], handDims[1], arialDims[1]))
+def mapFits(fits, handDims, arialDims, pad): #pad is percent of the arial dims, should be same on both side
+    arialFits = []
+    for i in range(len(fits)): #map the bounding box coords
+        arialFits.append(Fit(fits[i].name, fits[i].x, fits[i].y))
+        arialFits[i].x[0] = round(mapCoord(arialFits[i].x[0], handDims[0], arialDims[0], pad)) #bounds need to be integers, so round
+        arialFits[i].x[1] = round(mapCoord(arialFits[i].x[1], handDims[0], arialDims[0], pad))
+        arialFits[i].y[0] = round(mapCoord(arialFits[i].y[0], handDims[1], arialDims[1], pad))
+        arialFits[i].y[1] = round(mapCoord(arialFits[i].y[1], handDims[1], arialDims[1], pad))
     return arialFits

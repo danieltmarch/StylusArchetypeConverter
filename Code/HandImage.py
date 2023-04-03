@@ -35,15 +35,15 @@ def getStrokeData(character):
     return strokeData
     
 def plotChar(character):
-    charData = getChar(character)
-    if(charData is None): #file wasn't found
+    strokeData = getStrokeData(character)
+    if(strokeData is None): #file wasn't found
         return None
-    return plotStrokeData(charData)
+    return plotStrokeData(strokeData)
 
 def plotStrokeData(strokeData):
     colors=["red","darkorange","green","dodgerblue","blue","purple"]
     fig, ax = plt.subplots(figsize=(16,16))
-    
+
     for i in range(len(strokeData)):
         ax.plot(strokeData[i][0], strokeData[i][1], color=colors[i%len(colors)], linewidth=3.5)
     
