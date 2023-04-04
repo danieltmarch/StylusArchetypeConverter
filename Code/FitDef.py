@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from StrokeFit import Fit
 import StrokeFit as sf
 import pickle #for saving
+import os
 
 class FitData:
     #character, the chinese character for this particular fit
@@ -25,3 +26,6 @@ def loadFits(character):
 def saveFits(fitData):
     with open(f"../Data/Fits/{fitData.character}.pickle", 'wb') as file:
         pickle.dump(fitData, file)
+        
+def fileExists(character):
+    return os.path.exists(f"../Data/Fits/{character}.pickle")
