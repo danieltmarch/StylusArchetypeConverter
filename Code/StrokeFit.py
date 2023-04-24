@@ -6,9 +6,12 @@ import matplotlib.pyplot as plt
 #functions for fitting hanzi strokes against our stroke definitions.
 
 #a fit consists of a stroke name and bound box,
+#fit data should be a StrokeType
 class Fit:
-    def __init__(self, name, xRange, yRange):
+    def __init__(self, name, strokeData, xRange, yRange):
         self.name = name
+        
+        self.data = strokeData.copy() #data = seg List, seg = control point list, control list = [x,y] coord list
         self.x = np.array(xRange)
         self.y = np.array(yRange)
         self.group = 1
@@ -45,8 +48,8 @@ def getFits(strokes, strokeDefs, resol=50):
             if(distError < bestError): #new best, a threshhold could be set here too
                 bestError = distError
                 bestStroke = strokeData
-                bestType = strokeType.name
-        fits.append(Fit(bestType, xRange, yRange)) #add to fits
+                bestType = strokeType
+        fits.append(Fit(bestType.name, bestType, xRange, yRange)) #add to fits
     return fits
 
 #map a given stroke originally in a 0 to 1 bounding box, to a new xRange and yRange.
@@ -57,11 +60,11 @@ def mapStroke(strokeData, xR, yR):
     return strokeData
 
 #graph using the fits, hanzi strokeData (dictionary), and fits (list)
-def graphFits(strokes, strokeDefs, fits, resol=25):
+def graphFits(strokes, fits, resol=25):
     fig, ax = plt.subplots(figsize=(16,16))
     ax.invert_yaxis()
     for stroke in strokes: #graph hand written strokes
-        ax.plot(stroke[0], stroke[1], color="red", linewidth=4, linestyle="dotted") #flips y axis
+        ax.plot(stroke[0], stroke[1], color="red", linewidth=4, linestyle="dotted")
     
     evalPoints = np.linspace(0.0, 1.0, resol) #determines how accurate bezier curves are drawn
     for fit in fits: #plot bounding box and bezier curves
@@ -71,7 +74,7 @@ def graphFits(strokes, strokeDefs, fits, resol=25):
         ax.plot( fit.x, fit.y[0]*arr2, linestyle="dashed", color="blue", linewidth=3)
         ax.plot( fit.x, fit.y[1]*arr2, linestyle="dashed", color="blue", linewidth=3)
         
-        for curve in mapStroke(strokeDefs[fit.name].hanzi, fit.x, fit.y): #control points, 
+        for curve in mapStroke(fit.data.hanzi, fit.x, fit.y): #control points, 
             nodes = np.array(curve).transpose()
             curve = bezier.Curve(nodes, degree=len(curve)-1)
             curvePoints = np.array(curve.evaluate_multi(evalPoints).transpose().tolist()) #[[x,y]...]
@@ -148,7 +151,7 @@ def mapCoord(coord, handDim, arialDim, pad): #e.g. x coord 400, when original wi
 def mapFits(fits, handDims, arialDims, pad): #pad is percent of the arial dims, should be same on both side
     arialFits = []
     for i in range(len(fits)): #map the bounding box coords
-        arialFits.append(Fit(fits[i].name, fits[i].x, fits[i].y))
+        arialFits.append(Fit(fits[i].name, fits[i].data, fits[i].x, fits[i].y))
         arialFits[i].x[0] = round(mapCoord(arialFits[i].x[0], handDims[0], arialDims[0], pad)) #bounds need to be integers, so round
         arialFits[i].x[1] = round(mapCoord(arialFits[i].x[1], handDims[0], arialDims[0], pad))
         arialFits[i].y[0] = round(mapCoord(arialFits[i].y[0], handDims[1], arialDims[1], pad))

@@ -30,6 +30,24 @@ class StrokeType:
         self.arial = arialDef
         self.hanzi = hanziDef
 
+    def copy(self): #deep copy all the data
+        newStroke = StrokeType()
+        newStroke.name = self.name
+        newStroke.symbol = self.symbol
+        newStroke.arial = []
+        for seg in self.arial:
+            newSeg = []
+            for point in seg:
+                newSeg.append([point[0], point[1]])
+            newStroke.arial.append(newSeg)
+        newStroke.hanzi = []
+        for seg in self.hanzi:
+            newSeg = []
+            for point in seg:
+                newSeg.append([point[0], point[1]])
+            newStroke.hanzi.append(newSeg)
+        return newStroke
+
 def getFileNameFromStroke(stroke):
     return re.sub("[^a-zA-Z\d\s]", "", stroke.name) #allow only characters, digits, and spaces
 def loadStroke(fileName, extension=".pickle"):
