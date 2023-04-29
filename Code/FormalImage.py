@@ -12,7 +12,7 @@ import cv2 #can be installed with pip install opencv-python
 #Heavily based on https://stackoverflow.com/a/27753869/190597 (jsheperd)
 #renders as 1 = black, 0 = white
 #size is the final width/height of the image
-def renderChar(char, path='../Fonts/msyh.ttc', size=1000, fontsize=1000, pad=0.1, show=False):
+def renderChar(char, path='../Fonts/msyh.ttc', size=1000, fontsize=1000, pad=0.1, show=False, imgSize=12):
     font = ImageFont.truetype(path, fontsize) 
     w, h = font.getsize(char)
     h *= 2
@@ -44,5 +44,6 @@ def renderChar(char, path='../Fonts/msyh.ttc', size=1000, fontsize=1000, pad=0.1
     img = cv2.resize(imgSquare, dsize=(size, size), interpolation=cv2.INTER_NEAREST) #nearest neighbor interpolation
     
     if(show):
-        plt.imshow(img, cmap='gray', vmin=0, vmax=20)
+        fig, ax = plt.subplots(figsize=(imgSize,imgSize))
+        ax.imshow(img, cmap='gray', vmin=0, vmax=20)
     return img
