@@ -56,7 +56,7 @@ class AnchorConverter:
 
         #now determine which pixels are on the border (black but touches a white pixel, corner doesn't count)
         borderImg = np.zeros(np.shape(img)) #zero is not a border
-        borderImg[1:-1, 1:-1][(img[1:-1, 1:-1] == 1) & (img[:-2, 1:-1] == 0)] = 1 #up direction
+        borderImg[1:-1, 1:-1][(img[1:-1, 1:-1] == 1) & ( img[:-2, 1:-1] == 0)] = 1 #up direction
         borderImg[1:-1, 1:-1][(img[1:-1, 1:-1] == 1) & (img[2:, 1:-1] == 0)] = 1 #down direction
         borderImg[1:-1, 1:-1][(img[1:-1, 1:-1] == 1) & (img[1:-1, :-2] == 0)] = 1 #left direction
         borderImg[1:-1, 1:-1][(img[1:-1, 1:-1] == 1) & (img[1:-1, 2:] == 0)] = 1 #right direction
