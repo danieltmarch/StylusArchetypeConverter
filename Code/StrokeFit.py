@@ -2,6 +2,7 @@
 import numpy as np
 import bezier
 import matplotlib.pyplot as plt
+import copy
 
 #functions for fitting hanzi strokes against our stroke definitions.
 
@@ -11,7 +12,7 @@ class Fit:
     def __init__(self, name, strokeData, xRange, yRange):
         self.name = name
         
-        self.data = strokeData.copy() #data = seg List, seg = control point list, control list = [x,y] coord list
+        self.data = copy.deepcopy(strokeData) #data = seg List, seg = control point list, control list = [x,y] coord list
         self.x = np.array(xRange)
         self.y = np.array(yRange)
         self.group = 1
