@@ -8,6 +8,7 @@ import StrokeDef as sd
 from FitDef import FitData
 import FitDef as fd
 import time
+import Anchors as an
 
 def fitChar(character, size=1000, printOut=False):
     strokeData = hi.getStrokeData(character)
@@ -26,6 +27,11 @@ def fitChar(character, size=1000, printOut=False):
 
     fitData = FitData()
     fitData.set(character, arialFits, arialDims)
+    
+    #remaps based on anchors and arial geometry
+    sm = an.StrokeMapper()
+    fitData = sm.remapFits(character, fitData=fitData)
+    
     fd.saveFits(fitData)
     return True
 
