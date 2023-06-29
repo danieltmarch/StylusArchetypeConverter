@@ -27,8 +27,18 @@ class StrokeType:
     def set(self, name, symbol, arialDef, hanziDef): #name should be suitable to be a file name, e.g. no slashes or question marks
         self.name = name
         self.symbol = symbol
-        self.arial = arialDef
-        self.hanzi = hanziDef
+        
+        #so we can use numpy, we'll force the stroke defs to be "square" (all sublists of equal lenghths), just duplicate end points
+        maxArialLen = max(len(subList) for subList in arialDef)
+        for i in range(len(arialDef)):
+            while(len(arialDef[i]) != maxArialLen):
+                arialDef[i].append(arialDef[i][-1])
+        maxHanziLen = max(len(subList) for subList in hanziDef)
+        for i in range(len(hanziDef)):
+            while(len(hanziDef[i]) != maxHanziLen):
+                hanziDef[i].append(hanziDef[i][-1])
+        self.arial = np.array(arialDef)
+        self.hanzi = np.array(hanziDef)
 
     def copy(self): #deep copy all the data
         newStroke = StrokeType()
