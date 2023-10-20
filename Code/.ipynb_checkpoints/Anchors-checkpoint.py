@@ -297,9 +297,9 @@ class StrokeMapper:
             for samplePoint in curvePoints:
                 y = int(samplePoint[1])
                 x = int(samplePoint[0])
-                #if(not self.isCoordInRange(img, y, x)): #out of bounds give penalty seperate case to allow different penalty amounts
-                #    wrongSamples += 1
-                if(img[y,x] <= 0):
+                if(not self.isCoordInRange(img, y, x)): #out of bounds give penalty seperate case to allow different penalty amounts
+                    wrongSamples += 1
+                elif(img[y,x] <= 0):
                     wrongSamples += 1
         
         if(wrongSamples / totalSamples > .2): #too many poor sample points
