@@ -14,7 +14,7 @@ import cv2 #can be installed with pip install opencv-python
 #size is the final width/height of the image
 def renderChar(char, path='../Fonts/msyh.ttc', size=1000, fontsize=1000, pad=0.1, show=False, imgSize=12):
     font = ImageFont.truetype(path, fontsize) 
-    w, h = font.getsize(char)
+    _, _, w, h = font.getbbox(char)
     h *= 2
     image = Image.new('L', (w, h), 1)  
     draw = ImageDraw.Draw(image)
